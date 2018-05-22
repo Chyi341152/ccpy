@@ -6,6 +6,7 @@ from setuptools import setup, find_packages
 # To use a consistent encoding
 from codecs import open
 from os import path
+import sys
 from ccpy.__version__ import __version__, __title__, __description__,__url__,__author__,__author_email__
 
 here = path.abspath(path.dirname(__file__))
@@ -13,6 +14,12 @@ here = path.abspath(path.dirname(__file__))
 # Get the long description from the README file
 with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
+
+if sys.version_info[:3] < (3, 0, 0):
+    sys.stdout.write("Requires Python 3 to run.")
+    sys.exit(1)
+
+
 
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
@@ -120,7 +127,7 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages(exclude=['tools', 'docs', 'tests', 'data','docs']),  # Required
+    packages=find_packages(exclude=['ccpy','tools', 'docs', 'tests', 'data','docs']),  # Required
 
     # This field lists other packages that your project depends on to run.
     # Any package you put here will be installed by pip when your project is
@@ -166,11 +173,7 @@ setup(
     #
     # For example, the following would provide a command called `sample` which
     # executes the function `main` from this package when invoked:
-    entry_points={  # Optional
-        'console_scripts': [
-            'ccpy=ccpy:main',
-        ],
-    },
+    entry_points={'console_scripts': ['ccpy=ccpy.ccpy:main']},
 
     # List additional URLs that are relevant to your project as a dict.
     #
