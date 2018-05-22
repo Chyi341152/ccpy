@@ -26,7 +26,7 @@ Requires Python 3.0 or higher.
 
 ## Usage
 
-Usage: __import ccpy; print(ccpy.conversion(f="USD",t="CNY"))__
+Usage: __from ccpy import ccpy; print(ccpy.conversion(f="USD",t="CNY"))__
 
 Return: __{USD_CNY}__ 
 
