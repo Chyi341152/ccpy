@@ -19,11 +19,11 @@ Requires Python 3.0 or higher.
 
 Usage: __import ccpy; print(ccpy.conversion(f="USD",t="CNY"))__
 
-Return: 6.365602 
+Return: __6.369404__ 
 
 -- ccpy.conversion(f="USD",t="CNY") get Exchange Rate from United States Dollar to Chinese Yuan
 
-Exchange Rate time : 05/22/2018 16:12:35
+Exchange Rate time : 05/22/2018 16:33:22
 
 ccpy[🍰 🐜 🍰], 0.0.1 - Made by @Chyi's
 -- Currency Converter Python

@@ -5,7 +5,7 @@ import requests
 import random
 import sys
 
-from __version__ import (__title__,__description__,__url__,__version__,__build__,__author__,__author_email__,__license__,__copyright__,__mascot__)
+from ccpy.ccpy.__version__ import (__title__,__description__,__url__,__version__,__build__,__author__,__author_email__,__license__,__copyright__,__mascot__)
 
 BASE_URL = "https://free.currencyconverterapi.com/api/v5"
 

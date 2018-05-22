@@ -6,7 +6,7 @@ from setuptools import setup, find_packages
 # To use a consistent encoding
 from codecs import open
 from os import path
-from ccpy.ccpy.__version__ import __version__, __title__, __description__,__url__,__author__,__author_email__
+from ccpy.__version__ import __version__, __title__, __description__,__url__,__author__,__author_email__
 
 here = path.abspath(path.dirname(__file__))
 
