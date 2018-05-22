@@ -183,7 +183,6 @@ setup(
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
         'Bug Reports': 'https://github.com/chyi341152/ccpy/issues',
-        'Funding': 'https://donate.pypi.org',
         'Source': 'https://github.com/chyi341152/ccpy/',
     },
 )

@@ -26,9 +26,9 @@ Requires Python 3.0 or higher.
 
 ## Usage
 
-Usage: import ccpy; print(ccpy.conversion(f="USD",t="CNY")) 
+Usage: __import ccpy; print(ccpy.conversion(f="USD",t="CNY"))__
 
-Return: {USD_CNY} 
+Return: __{USD_CNY}__ 
 
 -- ccpy.conversion(f="USD",t="CNY") get Exchange Rate from United States Dollar to Chinese Yuan
 
