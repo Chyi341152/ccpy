@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 import datetime
-import sys
 from ccpy.ccpy.ccpy import print_help, conversion, countries
+from ccpy.ccpy.__version__ import __version__, __mascot__
 
 
 def rewrite_README():
     """Write README to current folder"""
     MD = '''
 # ccpy (Currency Converter Python) 
+
+[![Downloads](https://pepy.tech/chyiyaqing/ccpy)](http://pepy.tech/count/ccpy)
 
 A ccpy project that exists as an aid to the Convert one currency to another.
 
@@ -30,17 +32,24 @@ Usage: __from ccpy import ccpy; print(ccpy.conversion(f="USD",t="CNY"))__
 
 Return: __{USD_CNY}__ 
 
+Usage: __from ccpy import ccpy; print(ccpy.conversion(f="CNY",t="HKD"))__
+
+Return: __{CNY_HKD}__ 
+
 -- ccpy.conversion(f="USD",t="CNY") get Exchange Rate from United States Dollar to Chinese Yuan
 
 Exchange Rate time : {datetime}
 
-ccpy[🍰 🐜 🍰], 0.0.1 - Made by @Chyi's
+ccpy __{MASCOT}__ , __V{VERSION}__ - Made by @Chyi's
 -- Currency Converter Python
 
 List of All Countries
 
 | # | ID | CurrencyName | CurrencySymbol|
 |:---:|:---:|:---:|:---:| '''.format(USD_CNY=conversion(f="USD",t="CNY"),
+                                     CNY_HKD=conversion(f="CNY",t="HKD"),
+                                     VERSION=__version__,
+                                     MASCOT=__mascot__,
                                      datetime=datetime.datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
     MD += '\n'
     indexNum = 0

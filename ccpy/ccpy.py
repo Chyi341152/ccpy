@@ -4,6 +4,7 @@
 import requests
 import random
 import sys
+from collections import OrderedDict
 
 from . __version__ import (__title__,__description__,__url__,__version__,__build__,__author__,__author_email__,__license__,__copyright__,__mascot__)
 
@@ -60,7 +61,7 @@ def countries():
     assert resp.status_code == 200
     respJson = resp.json()
     # ex. "CNY":{"currencyName":"Chinese Yuan","currencySymbol":"¥","id":"CNY"}
-    return respJson["results"]
+    return OrderedDict(sorted(respJson["results"].items()))
 
 # Check now currency Converter
 def conversion(f="USD",t="CNY"):
