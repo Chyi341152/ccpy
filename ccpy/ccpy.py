@@ -84,9 +84,9 @@ def print_help():
 
     sys.stdout.write("\n\n{}List of All Countries{}".format(RED, END))
     for key, value in countries().items():
-        sys.stdout.write("""\n{}"ID"={}, "CurrencyName"={:^50}, "CurrencySymbol"={}{}""".format(GREEN,key,value["currencyName"],value.get("currencySymbol","Unknown"),END))
+        sys.stdout.write("""\n{}"ID"={}, "CurrencyName"={:^50}, "CurrencySymbol"={}{}""".format(GREEN,key,value["currencyName"],value.get("currencySymbol","\U0001F914"),END))
 
-    sys.stdout.write("""\n\n{}Usage:{} import ccpy; {}print(ccpy.conversion(f="USD",t="CNY")){} \n{}Return: {}{}\n""".format(UNDERLINE, END, YELLOW, END, GREEN,conversion(f="USD",t="CNY"),END))
+    sys.stdout.write("""\n\n{}Usage:{} import ccpy; {}print(ccpy.conversion(f="BTC",t="CNY")){} \n{}Return: {}{}\n""".format(UNDERLINE, END, YELLOW, END, GREEN,conversion(f="BTC",t="CNY"),END))
 
 
 if __name__ == "__main__":
