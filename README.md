@@ -25,13 +25,13 @@ Return: __6.373987__
 
 Usage: __from ccpy import ccpy; print(ccpy.conversion(f="CNY",t="HKD"))__
 
-Return: __1.231345__ 
+Return: __1.231441__ 
 
 -- ccpy.conversion(f="USD",t="CNY") get Exchange Rate from United States Dollar to Chinese Yuan
 
-Exchange Rate time : 05/23/2018 10:59:24
+Exchange Rate time : 05/23/2018 11:03:37
 
-ccpy __🍰 🐜 🍰__ , __V0.0.3__ - Made by @Chyi's
+ccpy __🍰 🐜 🍰__ , __V0.0.4__ - Made by @Chyi's
 -- Currency Converter Python
 
 List of All Countries

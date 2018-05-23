@@ -12,7 +12,7 @@
 __title__ = 'ccpy'
 __description__ = 'Python Free Currency Converter'
 __url__ = 'https://github.com/chyi341152/ccpy'
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 __build__ = 0x00001
 __author__ = "Chyi's"
 __author_email__ = 'chyiyaqing@gmail.com'
